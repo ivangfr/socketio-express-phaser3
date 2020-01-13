@@ -1,6 +1,6 @@
 # socketio-express-phaser3
 
-The goal of this project is to implement a multiplayer game using [`Socket.IO`](https://socket.io/), [`Express`](https://expressjs.com/) and [`Phaser 3`](https://phaser.io/phaser3).
+The goal of this project is to implement a multiplayer game using [`Socket.IO`](https://socket.io/), [`ExpressJS`](https://expressjs.com/) and [`Phaser 3`](https://phaser.io/phaser3).
 
 ## Prerequisite
 
@@ -24,6 +24,10 @@ node server.js
 ## Play game
 
 Open a browser and access `http://localhost:5000`
+
+The GIF below shows two users playing at the same time
+
+![playing-example](images/car-playing-example.gif)
 
 ## Expose game to the internet
 
