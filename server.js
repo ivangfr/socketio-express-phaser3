@@ -23,7 +23,7 @@ server.listen(5000, function () {
 var players = {}
 
 io.on('connection', function (socket) {
-  console.log('user [' + socket.id + '] connected')
+  console.log('player [' + socket.id + '] connected')
 
   players[socket.id] = {
     rotation: 0,
@@ -36,9 +36,9 @@ io.on('connection', function (socket) {
   socket.broadcast.emit('newPlayer', players[socket.id])
  
   socket.on('disconnect', function () {
-    console.log('user [' + socket.id + '] disconnected')
+    console.log('player [' + socket.id + '] disconnected')
     delete players[socket.id]
-    io.emit('disconnect', socket.id)
+    io.emit('playerDisconnected', socket.id)
   })
 
   socket.on('playerMovement', function (movementData) {
