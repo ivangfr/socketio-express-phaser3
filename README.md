@@ -50,6 +50,7 @@ The goal of this project is to implement a multiplayer game using [`Socket.IO`](
 
 - Run the following commands
   ```
+  npm upgrade
   npm i -g npm-check-updates
   ncu -u
   npm install
