@@ -23,7 +23,7 @@ The goal of this project is to implement a multiplayer game using [`Socket.IO`](
 
 ## Play game
 
-- Open a browser and access `http://localhost:5000`
+- Open a browser and access http://localhost:5000
 
 - The GIF below shows two users playing at the same time
 
