@@ -11,11 +11,7 @@ var config = {
       gravity: { y: 0 }
     }
   },
-  scene: {
-    preload: preload,
-    create: create,
-    update: update
-  }
+  scene: { preload, create, update }
 }
 
 var game = new Phaser.Game(config)
@@ -25,7 +21,7 @@ function preload() {
 }
 
 function create() {
-  var self = this
+  const self = this
   this.socket = io()
   this.otherPlayers = this.physics.add.group()
 
@@ -106,17 +102,18 @@ function update() {
       this.car.setAcceleration(0)
     }
 
-    var x = this.car.x
-    var y = this.car.y
-    var r = this.car.rotation
-    if (this.car.oldPosition && (x !== this.car.oldPosition.x || y !== this.car.oldPosition.y || r !== this.car.oldPosition.rotation)) {
-      this.socket.emit('playerMovement', { x: this.car.x, y: this.car.y, rotation: this.car.rotation })
-    }
-
-    this.car.oldPosition = {
+    const currPosition = {
       x: this.car.x,
       y: this.car.y,
       rotation: this.car.rotation
     }
+    if (this.car.oldPosition && (
+          currPosition.x !== this.car.oldPosition.x ||
+          currPosition.y !== this.car.oldPosition.y ||
+          currPosition.rotation !== this.car.oldPosition.rotation)) {
+      this.socket.emit('playerMovement', currPosition)
+    }
+
+    this.car.oldPosition = currPosition
   }
 }
