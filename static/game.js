@@ -7,7 +7,7 @@ var config = {
   physics: {
     default: 'arcade',
     arcade: {
-      debug: true,
+      // debug: true,
       gravity: { y: 0 }
     }
   },
@@ -62,7 +62,7 @@ function create() {
 function addPlayer(self, playerInfo) {
   self.car = self.physics.add.image(playerInfo.x, playerInfo.y, 'car')
     .setOrigin(0.5, 0.5)
-    .setDisplaySize(50, 50)
+    .setDisplaySize(100, 70)
 
   self.car.setCollideWorldBounds(true)
   self.car.setTint(playerInfo.color)
@@ -72,7 +72,7 @@ function addPlayer(self, playerInfo) {
 function addOtherPlayers(self, playerInfo) {
   const otherPlayer = self.physics.add.image(playerInfo.x, playerInfo.y, 'car')
     .setOrigin(0.5, 0.5)
-    .setDisplaySize(50, 50)
+    .setDisplaySize(100, 70)
     .setRotation(playerInfo.rotation)
     
   otherPlayer.playerId = playerInfo.playerId

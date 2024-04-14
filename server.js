@@ -27,8 +27,8 @@ io.on('connection', function (socket) {
 
   players[socket.id] = {
     rotation: 0,
-    x: 30,
-    y: 30,
+    x: 60,
+    y: 40,
     playerId: socket.id,
     color: getRandomColor()
   }

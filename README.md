@@ -7,6 +7,14 @@ The goal of this project is to implement a multiplayer game using [`Socket.IO`](
 - [`Node.js`](https://nodejs.org/en/)
 - [`ngrok`](https://ngrok.com/), in case you want to expose the game, running on your local machine, to the internet
 
+## Car images
+
+We are using this beautiful car image!
+
+![car](static/assets/car.png)
+
+Thanks [Freepik](http://www.freepik.com) for designing it!
+
 ## Start game
 
 - Open a terminal and navigate to `socketio-express-phaser3` root folder
