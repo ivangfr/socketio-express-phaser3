@@ -2,6 +2,14 @@
 
 The goal of this project is to implement a multiplayer game using [`Socket.IO`](https://socket.io/), [`ExpressJS`](https://expressjs.com/) and [`Phaser 3`](https://phaser.io/phaser3).
 
+## Proof-of-Concepts & Articles
+
+On [ivangfr.github.io](https://ivangfr.github.io), I have compiled my Proof-of-Concepts (PoCs) and articles. You can easily search for the technology you are interested in by using the filter. Who knows, perhaps I have already implemented a PoC or written an article about what you are looking for.
+
+## Additional Readings
+
+- \[**Medium**\] [**Creating a Multiplayer Game with Socket.IO, Express.js and Phaser 3**](https://medium.com/@ivangfr/creating-a-multiplayer-game-with-socket-io-express-js-and-phaser-3-51e022d49326)
+
 ## Prerequisites
 
 - [`Node.js`](https://nodejs.org/en/)
